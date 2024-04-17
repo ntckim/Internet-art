@@ -1,62 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Overlay Images</title>
-<style>
-  @keyframes swayTree {
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay Images</title>
+    <style>
+      @keyframes swayTree {
         0% {
-            transform: rotate(-1deg);
+          transform: rotate(-1deg);
         }
+
         50% {
-            transform: rotate(1deg);
+          transform: rotate(1deg);
         }
+
         100% {
-            transform: rotate(-1deg);
+          transform: rotate(-1deg);
         }
-    }
-  @keyframes swayTree2 {
+      }
+
+      @keyframes swayTree2 {
         0% {
-            transform: rotate(1deg);
+          transform: rotate(1deg);
         }
+
         50% {
-            transform: rotate(-1deg);
+          transform: rotate(-1deg);
         }
+
         100% {
-            transform: rotate(1deg);
+          transform: rotate(1deg);
         }
-    }
-    .container {
+      }
+
+      .container {
         position: relative;
-        width: 500px; 
+        width: 500px;
         height: 940px;
-      overflow: hidden; 
-    }
-    img {
+        overflow: hidden;
+      }
+
+      img {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-    }
-    .image1 {
-      animation: swayTree 10s ease-in-out infinite;
-      transform-origin: right;
-        z-index: -1; 
-    }
-  .image2 {
-      animation: swayTree2 10s ease-in-out infinite;
-      transform-origin: bottom;
-        z-index: 0; 
-    }
-</style>
-</head>
-<body>
+      }
+
+      .image1 {
+        animation: swayTree 10s ease-in-out infinite;
+        transform-origin: right;
+        z-index: -1;
+      }
+
+      .image2 {
+        animation: swayTree2 10s ease-in-out infinite;
+        transform-origin: bottom;
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
     <div class="container">
-        <img src="floright.png" alt="flower" class="image1">
+      <img src="floright.png" alt="flower" class="image1">
       <img src="flo left.png" alt="flower" class="image2">
-        <img src="flobg-2.png" alt="background" style = "z-index: -2;">
-      <img src = "stamp-2.png" alt = "signiature" style = "z-index: 1;">
+      <img src="flobg-2.png" alt="background" style="z-index: -2;">
+      <img src="stamp-2.png" alt="signiature" style="z-index: 1;">
     </div>
-</body>
+  </body>
 </html>
