@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Overlay Images</title>
 <style>
-  @keyframes sway {
+  @keyframes swayTree {
         0% {
             transform: rotate(-1deg);
         }
@@ -29,24 +29,18 @@
         width: 100%;
     }
     .image1 {
-      animation: sway 10s ease-in-out infinite;
+      animation: swayTree 10s ease-in-out infinite;
       transform-origin: right;
         z-index: 0; 
     }
-    .image2 {
-        z-index: -1; 
-      
-    }
-  .image3{
-    z-index: 1;
-  }
 </style>
 </head>
 <body>
     <div class="container">
         <img src="flo.png" alt="flower" class="image1">
-        <img src="flobg-2.png" alt="background" class="image2">
-        <img src = "frame.png" alt = "frame" class = "image3>"
+        <img src="flobg-2.png" alt="background" style = "z-index: -1;">
+        <img src = "frame.png" alt = "frame" style = "z-index: 1;">
+      <img src = "stamp-2.png" alt = "signiature" style = "z-index: 1;">
     </div>
 </body>
 </html>
